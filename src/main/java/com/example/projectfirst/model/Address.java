@@ -5,6 +5,20 @@ public class Address {
     private String streetName;
     private String city;
 
+
+
+    //constructor injection
+
+
+    public Address() {
+    }
+
+    public Address(int doorNo, String streetName, String city) {
+        this.doorNo = doorNo;
+        this.streetName = streetName;
+        this.city = city;
+    }
+
     public int getDoorNo() {
         return doorNo;
     }

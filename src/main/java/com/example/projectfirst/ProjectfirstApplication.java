@@ -32,22 +32,27 @@ public class ProjectfirstApplication {
 //		System.out.println("emp1 is : "+emp1);
 //		System.out.println("adrs1 is : "+adrs1);
 		//lose coupling chaloo karte hai loose coupling
-		Employee emp2=new Employee();
-		emp2.setId(12);
-		emp2.setName("suman");
-		emp2.setEmail("sumantotad2002@gmail.com");
-		emp2.setDesignation("developer");
-		Address adr2=new Address();
-         adr2.setDoorNo(786);
-		 adr2.setStreetName("chadchan");
-		adr2.setCity("Indi");
-		emp2.setAddress(adr2);
-		System.out.println("emp2 is: "+emp2);
-		System.out.println("adr2 is : "+adr2);
-		emp2.getAddress().setStreetName("hingani");
-		emp2.getAddress().setCity("bagalkote");
-		System.out.println("emp2 after the change: "+emp2);
-		System.out.println("adr2 is : "+adr2);
+//		Employee emp2=new Employee();
+//		emp2.setId(12);
+//		emp2.setName("suman");
+//		emp2.setEmail("sumantotad2002@gmail.com");
+//		emp2.setDesignation("developer");
+//		Address adr2=new Address();
+//         adr2.setDoorNo(786);
+//		 adr2.setStreetName("chadchan");
+//		adr2.setCity("Indi");
+//		emp2.setAddress(adr2);
+//		System.out.println("emp2 is: "+emp2);
+//		System.out.println("adr2 is : "+adr2);
+//		emp2.getAddress().setStreetName("hingani");
+//		emp2.getAddress().setCity("bagalkote");
+//		System.out.println("emp2 after the change: "+emp2);
+//		System.out.println("adr2 is : "+adr2);
+		Address adr1=new Address(234,"old street","pune");
+
+		Employee emp1=new Employee(adr1,"developer","sumasn@gmail.com","sumi",123);
+		System.out.println("emp1:"+emp1);
+		System.out.println("adr1:"+adr1);
 
 	}
 	/*

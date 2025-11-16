@@ -7,6 +7,17 @@ public class Employee {
     public String designation;
     public Address address;
 
+    public Employee(Address address, String designation, String email, String name, int id) {
+        this.address = address;
+        this.designation = designation;
+        this.email = email;
+        this.name = name;
+        this.id = id;
+    }
+
+    public Employee() {
+    }
+
     public int getId() {
         return id;
     }
